@@ -1,0 +1,75 @@
+[0m06:36:31.705619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2f64ec2a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2f635b3c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2f635b3c70>]}
+
+
+============================== 06:36:31.709255 | 9f049b86-7523-4e37-b5f9-22af8c29a181 ==============================
+[0m06:36:31.709255 [info ] [MainThread]: Running with dbt=1.8.4
+[0m06:36:31.710051 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m06:36:31.717022 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/codespace/.dbt')}
+[0m06:36:31.717579 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m06:39:00.810345 [error] [MainThread]: Encountered an error:
+
+[0m06:39:00.811909 [error] [MainThread]: Traceback (most recent call last):
+  File "/workspaces/codespaces-jupyter/venv/lib/python3.10/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/workspaces/codespaces-jupyter/venv/lib/python3.10/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+  File "/workspaces/codespaces-jupyter/venv/lib/python3.10/site-packages/dbt/cli/main.py", line 470, in init
+    results = task.run()
+  File "/workspaces/codespaces-jupyter/venv/lib/python3.10/site-packages/dbt/task/init.py", line 325, in run
+    project_name = self.get_valid_project_name()
+  File "/workspaces/codespaces-jupyter/venv/lib/python3.10/site-packages/dbt/task/init.py", line 279, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "/workspaces/codespaces-jupyter/venv/lib/python3.10/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/workspaces/codespaces-jupyter/venv/lib/python3.10/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m06:39:00.813838 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 149.16951, "process_user_time": 1.290417, "process_kernel_time": 0.116217, "process_mem_max_rss": "84188", "process_in_blocks": "3168", "process_out_blocks": "16", "command_success": false}
+[0m06:39:00.814634 [debug] [MainThread]: Command `dbt init` failed at 06:39:00.814521 after 149.17 seconds
+[0m06:39:00.815190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2f64ec2a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2f635b3730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2f635bef20>]}
+[0m06:39:00.815757 [debug] [MainThread]: Flushing usage events
+[0m06:54:57.093914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e89b165ea70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e89afd57bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e89afd57c10>]}
+
+
+============================== 06:54:57.107107 | 6613f287-e0cd-4e34-9fb4-5387b4f4acd1 ==============================
+[0m06:54:57.107107 [info ] [MainThread]: Running with dbt=1.8.4
+[0m06:54:57.108025 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/codespace/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m06:56:07.968040 [debug] [MainThread]: Starter project path: /workspaces/codespaces-jupyter/venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m06:56:07.972623 [info ] [MainThread]: 
+Your new dbt project "dbt_ny_taxi_2019_2020" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m06:56:07.973285 [info ] [MainThread]: Setting up your profile.
+[0m06:57:43.949116 [info ] [MainThread]: Profile dbt_ny_taxi_2019_2020 written to /home/codespace/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m06:57:43.950549 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 167.15158, "process_user_time": 2.341919, "process_kernel_time": 0.237861, "process_mem_max_rss": "199560", "process_in_blocks": "191960", "process_out_blocks": "96"}
+[0m06:57:43.951348 [debug] [MainThread]: Command `dbt init` succeeded at 06:57:43.951229 after 167.15 seconds
+[0m06:57:43.951944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e89b165ea70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e89afd576d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e89afd55540>]}
+[0m06:57:43.952556 [debug] [MainThread]: Flushing usage events
+[0m07:13:44.891042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ddc01f2980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ddbe8dd660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ddbe8dd5d0>]}
+
+
+============================== 07:13:44.894841 | 482645a6-e337-43db-b011-a82f97f2a331 ==============================
+[0m07:13:44.894841 [info ] [MainThread]: Running with dbt=1.8.4
+[0m07:13:44.895604 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m07:13:44.896355 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /workspaces/codespaces-jupyter/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m07:13:44.897381 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.06965542, "process_user_time": 1.242204, "process_kernel_time": 0.108191, "process_mem_max_rss": "83440", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m07:13:44.898146 [debug] [MainThread]: Command `dbt seed` failed at 07:13:44.898028 after 0.07 seconds
+[0m07:13:44.898706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ddc01f2980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ddbe8dd600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ddbe8dd6c0>]}
+[0m07:13:44.899291 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,9 @@
+sources:
+    - name: staging
+      database: promptmebebe
+      schema: ny_taxi
+    
+      tables:
+      - name: green_taxi_2019-2020
+      - name: yellow_taxi_2019-2020
+      - name: fhv_trip_data_2019-2020
